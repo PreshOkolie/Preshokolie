@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #850aae;
+    --primary: #deb8f5;
     --secondary: #deb8f5;
-    --light: #F6F4F9;
-    --dark: #04000B;
+    --light: #361663;
+    --dark: #323234;
 }
 
 
@@ -105,23 +105,25 @@ h6,
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary) !important;
+    color: var(--light) !important;
     outline: none;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--primary) !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--light) !important;
 }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 132, 0) !important;
+}
 
 .navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
+    color: #361663;
 }
 
 .navbar-light .navbar-brand img {
@@ -172,7 +174,7 @@ h6,
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: #FFFFFF;
+        background: var(--light);
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
@@ -197,8 +199,8 @@ h6,
     }
 
     .navbar-light .btn {
-        color: var(--dark);
-        background: #FFFFFF;
+        color: #FFFFFF;
+        background: var(--light);
     }
 
     .sticky-top.navbar-light .btn {
@@ -210,15 +212,16 @@ h6,
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 2rem;
-    padding: 18rem 0;
-    background:
+    margin-bottom: 1rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
+     /* background:
         url(../img/blob-top-left.png),
         url(../img/blob-top-right.png),
         url(../img/blob-bottom-left.png),
         url(../img/blob-bottom-right.png),
         url(../img/blob-center.png),
-        url(../img/bg-bottom.png);
+        url(../img/bg-bottom.png);  */
     background-position:
         left 0px top 0px,
         right 0px top 0px,
@@ -281,7 +284,7 @@ h6,
     background: var(--primary);
 }
 
-.section-title.text-secondary span:first-child,
+ .section-title.text-secondary span:first-child,
 .section-title.text-secondary span:last-child,
 .section-title.text-secondary span:first-child::after,
 .section-title.text-secondary span:last-child::after {
@@ -318,7 +321,7 @@ h6,
 
 
 /*** Fact ***/
-.fact {
+/* .fact {
     margin: 6rem 0;
     background:
         url(../img/blob-top-left.png),
@@ -333,7 +336,7 @@ h6,
         right 0px bottom 0px,
         center center;
     background-repeat: no-repeat;
-}
+} */
 
 
 /*** Service ***/

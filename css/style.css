@@ -60,7 +60,6 @@ h6,
     transition: .5s;
     background-color: #361663;
     color: #ffffff;
-    margin-bottom: 5rem;
 }
 
 .btn:hover {
@@ -350,32 +349,16 @@ hr{
 .progress-bar3 {
  background-color: #361663;
 }
-/*** Fact ***/
-/* .fact {
-    margin: 6rem 0;
-    background:
-        url(../img/blob-top-left.png),
-        url(../img/blob-top-right.png),
-        url(../img/blob-bottom-left.png),
-        url(../img/blob-bottom-right.png),
-        url(../img/blob-center.png);
-    background-position:
-        left 0px top 0px,
-        right 0px top 0px,
-        left 0px bottom 0px,
-        right 0px bottom 0px,
-        center center;
-    background-repeat: no-repeat;
-} */
 
 
 /*** Service ***/
 .service-item {
     position: relative;
     padding: 45px 30px;
-    background: var(--light);
+    background: var(--secondary);
     overflow: hidden;
     transition: .5s;
+    color: #FFFFFF;
 }
 
 .service-item:hover {
@@ -406,11 +389,12 @@ hr{
 .service-item h5,
 .service-item p {
     transition: .5s;
+    color: #FFFFFF;
 }
 
 .service-item:hover h5,
 .service-item:hover p {
-    color: #FFFFFF;
+    color: var(--secondary);
 }
 
 .service-item a.btn {
@@ -419,7 +403,7 @@ hr{
     left: 50%;
     transform: translateX(-50%);
     color: var(--primary);
-    background: #FFFFFF;
+    background: var(--secondary);
     border-radius: 40px 40px 0 0;
     transition: .5s;
     z-index: 1;

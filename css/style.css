@@ -54,13 +54,13 @@ h6,
     font-weight: 500 !important;
 }
 
-
 /*** Button ***/
 .btn {
     font-weight: 500;
     transition: .5s;
     background-color: #361663;
     color: #ffffff;
+    margin-bottom: 5rem;
 }
 
 .btn:hover {
@@ -132,7 +132,7 @@ h6,
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #361663;
+    color: var(--secondary);
 }
 
 .navbar-light .navbar-brand img {
@@ -221,7 +221,7 @@ h6,
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     padding-top: 5rem;
     padding-left: 10rem;
      /* background:
@@ -253,7 +253,8 @@ h6,
     position: relative;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-family: 'Raleway';
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -286,7 +287,7 @@ h6,
     left: -20px;
 }
 
-.section-title.text-primary span:first-child,
+/* .section-title.text-primary span:first-child,
 .section-title.text-primary span:last-child,
 .section-title.text-primary span:first-child::after,
 .section-title.text-primary span:last-child::after {
@@ -305,15 +306,31 @@ h6,
 .section-title.text-white span:first-child::after,
 .section-title.text-white span:last-child::after {
     background: #FFFFFF;
-}
+} */
 
 
 /*** Feature ***/
 .feature-item {
     transition: .5s;
     border: 1px solid #361663;
+    color: rgb(49, 48, 48);
+}
+hr{
+    padding-bottom: 0.5rem;
+    position: relative;
+    bottom: 3rem;
 }
 
+.cont {
+    /* background-color: #361663; */
+    margin-bottom: 17rem;
+    /* margin-left: -3rem;
+    margin-right: -9rem; */
+    /* margin: 1rem; */
+    /* padding: 5rem; */
+    margin: 0;
+    padding: 0;
+}
 .feature-item:hover {
     margin-top: -15px;
 }
@@ -321,15 +338,18 @@ h6,
 
 /*** About ***/
 .progress {
-    height: 5px;
+    height: 4px;
 }
 
 .progress .progress-bar {
     width: 0px;
     transition: 3s;
+    background-color: rgb(255, 132, 0);
 }
 
-
+.progress-bar3 {
+ background-color: #361663;
+}
 /*** Fact ***/
 /* .fact {
     margin: 6rem 0;
